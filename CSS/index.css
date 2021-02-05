@@ -1,0 +1,53 @@
+*{
+    font-family:Poppins;
+}
+
+/*navigation*/
+ul {
+    list-style-type: none;
+    margin-left: auto;
+    width: 50%;
+  }
+
+.inline-block {
+    display: inline-block;
+    vertical-align:top;
+}
+
+.logo {
+    width: 23%;
+    padding: 1%;
+    text-align: center;
+}
+
+nav {
+    width: 73%;
+    padding: 1%;
+}
+
+/* hero */
+.content {
+    width: 500px;
+    margin: 0 auto;
+    line-height: 30px;
+    color:#4773e0;
+
+}
+
+/*footer*/
+footer p {
+    width: 200px;
+}
+
+#footerblurb {
+text-align: left;
+padding: 20px;
+}
+
+.linkedinlogo{
+    background-image: url(../images/linkedinlogo.png)
+}
+
+.email{
+    background-image: url(../images/envelope.jpg);
+}
