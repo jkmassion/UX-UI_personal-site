@@ -26,13 +26,40 @@ nav {
 }
 
 /* hero */
-.content {
-    width: 500px;
-    margin: 0 auto;
-    line-height: 30px;
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {  
     color:#4773e0;
+    text-align: left;
+    width:fit-content;
+    padding: 100px;
+    
+}
+
+h1 {
+    font-size: 80pt;
+    line-height: 80pt;
+    width: 600px;
+    margin-bottom: 40px;
+}
+
+em {
+    color: #e54888;
+    font-style: normal;
+}
+
+p {
+    font-size: 20pt;
+    font-weight: medium; 
+    line-height: 50px;
+    width: 600px;
 
 }
+
 
 /*footer*/
 footer p {
@@ -45,7 +72,7 @@ padding: 20px;
 }
 
 .linkedinlogo{
-    background-image: url(../images/linkedinlogo.png)
+    background-image: url(../images/linkedinlogo.png);
 }
 
 .email{
