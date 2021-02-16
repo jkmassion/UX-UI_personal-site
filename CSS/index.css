@@ -9,20 +9,20 @@ ul {
     width: 50%;
   }
 
-.inline-block {
-    display: inline-block;
-    vertical-align:top;
-}
-
 .logo {
     width: 23%;
-    padding: 1%;
+    padding: 20%;
     text-align: center;
 }
 
 nav {
-    width: 73%;
     padding: 1%;
+    display: flex;
+}
+
+.primary {
+    display:flexbox;
+    flex-direction: row;
 }
 
 /* hero */
