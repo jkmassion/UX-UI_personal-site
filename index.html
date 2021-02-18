@@ -4,8 +4,8 @@
         <title>Julia Massion</title>
         <link rel="stylesheet" href="CSS/index.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
     <header class="nav inline-block">
@@ -18,7 +18,7 @@
                 <li>Resume</li>
                 <li>Projects</li>
                 <li>Contact</li>
-                <li class="linkedinlogo"></li>
+                <li class="linkedinlogo"><a</li>
                 <li class="email"></li>
                 <li class="moon"></li>
             </ul>
@@ -29,27 +29,36 @@
             <div class="content">
                 <H1>Hi, I'm <em>Julia</em></H1>
                 <p>I'm a UX/UI Designer based in Toronto, Canada. I'm passionate about visual communication, creativity, and problem solving.  Right now I'm researching how to design more accessible products.  </p>
-                <button class="resume">Resume</button>
-                <button class="linkedinlogo">Linkedin</button>
-                <button class="email">Email</button>
+                <p>Resume</p>
+                <a href= email> <img class="icon" alt="email-icon" src="images/envelope.jpg" height="40px" width="40px">
+                </a>
+                <a href= ="https://www.linkedin.com/in/jmassion/"><img class="icon" alt="linkedin-icon" src="images/linkedinlogo.png" height="40px" width="40px">
+                </a>
+                
             </div>
         </section>
         <!-- footer -->
 
-        <footer>
-            <div class="inline-block" id="footerBlurb">
+        <footer class="footer-container">
+            <div class="sitemap-container">
+                <ul>
+                    <li>About</li>
+                    <li>Resume</li>
+                    <li>Home</li>
+                    <li>Projects</li>
+                    <li>Contact</li>
+                </ul>
+                <div class="icons-container">
+                    <a href= email> <img class="icon" alt="email-icon" src="images/envelope.jpg" height="40px" width="40px"></a>
+                    <a href= ="https://www.linkedin.com/in/jmassion/">
+                    <img class="icon" alt="linkedin-icon" src="images/linkedinlogo.png" height="40px" width="40px">
+                    </a>
+                </div> 
+            </div> 
+            <div class="text-container">
                 <img src="images/logo circle blue@2x.png" height="60px" width="60px">
-                <p class="footer">Dual US-Canadian citizen living in Toronto. Currently seeking full-time work.</p>
-            </div>
-            <ul>
-                <li class="inline-block">Dual US-Canadian citizen living in Toronto. Currently seeking full-time work.</li>
-                <li class="inline-block">About</li>
-                <li class="inline-block">Resume</li>
-                <li class="inline-block">Home</li>
-                <li class="inline-block">Projects</li>
-                <li class="inline-block">Contact</li>
-                <li class="inline-block linkedinlogo email"></li>
-            </ul>
+                <p>Dual US-Canadian citizen living in Toronto. Currently seeking full-time work.</p>
+            </div>         
         </footer>
    
 

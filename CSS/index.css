@@ -62,6 +62,24 @@ p {
 
 
 /*footer*/
+
+.footer-container
+
+.sitemap-container {
+    height: 100px;
+    width: 300px;
+}
+
+
+.icons-container
+
+.text-container {
+    height:100px;
+    widows: 200px;
+}
+
+
+
 footer p {
     width: 200px;
 }
