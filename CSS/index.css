@@ -15,7 +15,7 @@
 }
 
 
-/*navigation*/
+/*====================navigation==========================*/
 
 .topnav {
     background-color: #f2f2f2;
@@ -39,7 +39,7 @@ nav {
 }
 
 
-/* hero */
+/*==============hero============*/
 .hero {
     display: flex;
     align-items: center;
@@ -75,7 +75,7 @@ p {
 }
 
 
-/*footer*/
+/*===================footer======================*/
 
 .footer-container
 
@@ -133,4 +133,102 @@ nav ul {
       cursor: pointer;
       color: #fff;
       display: none;
+}
+
+
+
+/* ================Projects Section=============== */
+
+.featured-project{
+    position: relative;
+    width:100%;
+}
+
+.featured-image{
+    z-index:-4;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.featured-body{
+    z-index: 1;
+    color: white;
+}
+
+.featured-title h4 {
+    font-size: 35pt;
+    line-height: 50px;
+    font-weight: 700;
+}
+
+.featured-text p {
+    font-size: 20pt;
+    font-weight:600;
+}
+
+.featured-button{
+    border: 1px solid white;
+}
+
+.project-card{
+    margin: 10px 20px 10px 20px;
+    border: 1px solid #00366c;
+}
+
+.project-card-container{
+    display: grid;
+    grid-template-areas: 
+   "card1 card2"
+   "card3 card4";
+    grid-template-columns: 'max-content max-content';
+}
+
+.project1{ grid-area: card1;}
+
+.project2{grid-area: card2;}
+
+.project3{grid-area: card3;}
+
+.project4{grid-area: card4;}
+
+
+/*==============Skills Section===============*/
+
+
+.skills-card-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.skillsCard {
+    width: 25%;
+    margin: 10px 20px 10px 20px;
+}
+
+
+
+@media only screen and (max-width:600){
+    .skills-card-container{
+        flex-direction:column;
+    }
+
+    .skillsCard {
+        width: 100%;
+        margin: 10px 20px 10px 20px;
+    }
+    
+    .project-card-container{
+        grid-template-areas: 
+        "card1"
+        "card2"
+        "card3"
+        "card4";
+    }
+
 }
