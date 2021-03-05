@@ -37,7 +37,10 @@
         <!-- navigation -->
     <nav id="topNav">
         <div class="container-fluid wrapper">
-            <ul class="nav justify-content-center">
+            <ul class="nav justify-content-right">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="images/logo circle blue@2x.png" height="60px" width="60px"></a>
+                </li>
                 <li class="nav-item">
                 <a class="nav-link active" href="#">About</a>
                 </li>
@@ -50,9 +53,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">Contact</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"><img src="images/logo circle blue@2x.png" height="60px" width="60px"></a>
-                </li>
+                
             </ul>
         </div>
     </nav>
@@ -77,20 +78,18 @@
         <div class="section-header">
               <h3 class="section-title">Projects</h3>
         </div>
-        
-        <div class="featured-project"> <!--FLEX CONTAINER-->
-              <img class="featured-image" src="../images/CCAhero.png">
-               <div class="featured-body">
-                  <h4 class="featured-title">Responsive Government Site Redesign </h4>
-                  <p class="featured-text">Improved the confusing navigation and illogical information architecture of the Canada Council of Art’s site by redesigning the navigation bar and creating a site map.</p>
-                  <a href="#" class="featured-button" role="button">See More</a>
-               </div>
-        </div>
+       
 
-        <div class="overlay-image"><a href="#">
-            <img class="image" src="../UX_UI_HW_17/images/CCAhero copy.png" alt="Alt text" />
-            <div class="text">Responsive Government Site Redesign</div>
-          </a></div>
+        <div class="overlay-image">
+            <img class="image" src="../UX_UI_HW_17/images/CCAhero copy.png" />
+            <div class="overlay-image text">
+                <div class="featured-project"> <!--FLEX CONTAINER-->
+                          <h4 class="featured-title">Responsive Government Site Redesign </h4>
+                          <p class="featured-text">Improved the confusing navigation and illogical information architecture of the Canada Council of Art’s site by redesigning the navigation bar and creating a site map.</p>
+                          <a href="#" class="featured-button" role="button">See More</a>
+                       </div>
+                </div></div>
+          </div>
 
         <div class="projects-card-container"> <!--FLEX CONTAINER-->
         
@@ -179,29 +178,29 @@
     </section>
     
 
-        <!-- footer -->
+        <!------------footer -------------->
 
         <footer class="footer-container">
+            <div class="text-container" style="padding:30px;">
+                <img src="images/logo circle blue@2x.png" height="60px" width="60px" style="padding:10px;">
+                <p style="padding:10px;">Dual US-Canadian citizen living in Toronto. Currently seeking full-time work.</p>
+            </div>   
             <div class="sitemap-container">
-                <ul>
+                <ul class="footer-sitemap">
                     <li>About</li>
                     <li>Resume</li>
                     <li>Home</li>
                     <li>Projects</li>
                     <li>Contact</li>
-                    <li>Contact</li>
                 </ul>
                 <div class="icons-container">
-                    <a href= email> <img class="icon" alt="email-icon" src="images/envelope.jpg" height="40px" width="40px"></a>
+                    <a href="#"> <img class="icon" alt="email-icon" src="images/envelope.jpg" height="40px" width="40px"></a>
                     <a href="https://www.linkedin.com/in/jmassion/">
                     <img class="icon" alt="linkedin-icon" src="images/linkedinlogo.png" height="40px" width="40px">
                     </a>
                 </div> 
             </div> 
-            <div class="text-container">
-                <img src="images/logo circle blue@2x.png" height="60px" width="60px">
-                <p>Dual US-Canadian citizen living in Toronto. Currently seeking full-time work.</p>
-            </div>         
+                 
         </footer>
    
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
