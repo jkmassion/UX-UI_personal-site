@@ -1,5 +1,6 @@
 *{
     font-family: Poppins;
+    scroll-behavior: smooth;
 }
 
 .inner {
@@ -22,17 +23,17 @@ a {
 /*====================navigation==========================*/
 
 .topnav {
-    background-color: #f2f2f2;
-    z-index: 10;
-
+    color: #f2f2f2;
+    opacity: 80%;
 }
+
 ul {
     list-style-type: none;
     margin-left: auto;
     width: 50%;
   } 
 
-.logo {
+.nav-logo {
     width: 23%;
     padding: 20%;
     text-align: center;
@@ -41,12 +42,13 @@ ul {
 nav {
     padding: 1%;
     display: flex;
+    background-color: #f2f2f2
 }
 
 
 /*==============hero============*/
 .hero {
-    display: flex;
+    display: grid;
     align-items: center;
     justify-content: center;
 }
@@ -156,22 +158,21 @@ h3 {
     color: white; 
 }
 
-.project-card{
+.project-card {
     margin: 10px 20px 10px 20px;
     border: 1px solid #00366c;
     padding: 50px;
+
 }
 
 .project-card-container{
-    display: grid;
-    grid-template-areas: 
-   "card1 card2"
-   "card3 card4";
-    grid-template-columns: 'max-content max-content';
-    padding: 20px;
+   display: grid;
+   grid-template-columns: auto auto;
+   grid-template-rows: auto auto;
+   padding: 20px;
 }
 
-.project1{ grid-area: card1;}
+.project1{grid-area: card1;}
 
 .project2{grid-area: card2;}
 
@@ -186,27 +187,24 @@ h3.section-title  {
 margin-top: 50px;
 }
 .skills-card-container {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    overflow: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
 
 }
 
 
 .skillsCard {
-    width: 25%;
-    margin: 30px;
-    display: flex;
+    margin: 30px 30px 30px 60px;
+    padding: 100px;
+    
 
 }
 
 
 
 @media only screen and (max-width:600){
-    .skills-card-container{
+    .-card-container{
         flex-direction:column;
     }
 
@@ -217,10 +215,8 @@ margin-top: 50px;
     
     .project-card-container{
         grid-template-areas: 
-        "card1"
-        "card2"
-        "card3"
-        "card4";
+        "card1 card2"
+        "card3 card4";
     }
 
 }
