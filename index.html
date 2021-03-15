@@ -10,57 +10,36 @@
         <link rel="stylesheet" href="CSS/index.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" >
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-G3VS50JTK6"></script>
-        <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-G3VS50JTK6');
-        </script>
-        <!-- Hotjar Tracking Code for https://jkmassion.github.io/UX_UI_HW_17/ -->
-        <script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:2274238,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
         </script>
         <title>Julia Massion</title>
 </head>
 <body>
     
         <!-- navigation -->
-    <nav id="topNav sticky-top">
-        <div class="container-fluid wrapper">
-            <ul class="nav justify-content-right">
-                <li class="nav-item nav-logo">
-                    <a class="nav-link" href="#"><img src="images/logo circle blue@2x.png" height="60px" width="60px"></a>
+    <nav id="topNav" class="sticky">
+        <a href="#" class="nav-logo"><img src="images/logo circle blue@2x.png" height="60px" width="60px"></a>
+        <ul class="nav">
+            <button class="dark" onclick="toggleTheme('dark');">Dark</button>
+            <button class=
+            "light" onclick="toggleTheme('light');">Light</button>        
+            <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link active" href="#">About</a>
+                    <a href="#" class="nav-link" >Resume</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Resume</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Projects</a>
+                    <a href="#" class="nav-link" >Projects</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Contact</a>
-                </li>
-                
+                </li>    
             </ul>
-        </div>
+            
     </nav>
 
         <!-- about me hero -->
-    <header id="first"> 
-        <div class="headerContent padding">
+    <header class="hero"> 
           <div class="inner content"> 
                 <H1> Hi, I'm <em>Julia</em></H1>
                 <p>I'm a UX/UI Designer based in Toronto, Canada. I'm passionate about visual communication, creativity, and problem solving.  Right now I'm researching how to design more accessible products.</p>
@@ -206,6 +185,7 @@
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <script src="Js/java.js"></script>
 
     </body>
 

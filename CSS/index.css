@@ -1,3 +1,26 @@
+/*====================!!TRIAL*/
+:root {
+    --background-primary:#fff;
+    --color-primary:#4773e0;
+  }
+  
+  html[data-theme='dark'] {
+    --background-primary:#001830;
+    --color-primary:#C0D9F1;
+  }
+  
+  html {
+    transition: color 300ms, background-color 300ms;
+    background: var(--background-primary);
+    color: var(--color-primary);
+  }
+  
+  h1, h2, p {
+    color: var(--color-primary);
+  }
+
+/*====================TRIAL END!!==========================*/
+
 *{
     font-family: Poppins;
     scroll-behavior: smooth;
@@ -9,42 +32,62 @@
     max-width:1000px; 
 }
 
-.headerContent {
-    padding-top: 0px;
-    padding-right: 50px;
-    padding-bottom: 0px;
-    padding-left: 50px;
-}
-
 a {
     text-decoration-line: none;
 }
 
 /*====================navigation==========================*/
 
-.topnav {
+#topnav {
     color: #f2f2f2;
-    opacity: 80%;
+    position: absolute;
 }
 
-ul {
+ul.nav{
     list-style-type: none;
-    margin-left: auto;
     width: 50%;
+    justify-content: right;
+    padding: 0.5em;
   } 
 
 .nav-logo {
     width: 23%;
-    padding: 20%;
-    text-align: center;
+    padding: 0.3em;
+    float: left;
+    
 }
 
 nav {
     padding: 1%;
     display: flex;
-    background-color: #f2f2f2
+    background-color: #f2f2f2;
+    opacity: 90%;
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/*==============light mode/dark mode============*/
+
+button {
+    display: inline-block;
+    border-radius: 3px;
+}
+
+.light {
+    background-color: #C0D9F1;
+    border: none;
+    color: #4773e0;
+}
+
+.dark {
+    background-color: #00366c;
+    color: #C0D9F1;
+    border: none;
+}
 
 /*==============hero============*/
 .hero {
@@ -56,9 +99,7 @@ nav {
 .content {  
     color:#4773e0;
     text-align: left;
-    width:fit-content;
     padding: 100px;
-    
 }
 
 h1 {
@@ -261,7 +302,6 @@ margin-left: 30px;
   color: #fff;
   padding: 0;
   text-align: center;
-  margin: 0;
   padding-right: 40px;
   transition: 1s;
   float: right;
