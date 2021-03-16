@@ -36,11 +36,24 @@ a {
     text-decoration-line: none;
 }
 
+
+body {
+    display: grid;
+    grid-template-columns: 10% 12% 18% auto 12% 18% 10% ;
+    grid-template-rows:5% 13% 13% 16% 16% 12% 18% 7%;
+    grid-template-areas:
+    "topnav topnav topnav topnav topnav topnav topnav" 
+    " . ";
+}
 /*====================navigation==========================*/
 
 #topnav {
     color: #f2f2f2;
     position: absolute;
+    grid-column-start: 1;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end: 2;
 }
 
 ul.nav{
@@ -91,9 +104,13 @@ button {
 
 /*==============hero============*/
 .hero {
-    display: grid;
+    display: inline-grid;
     align-items: center;
     justify-content: center;
+    grid-column-start:3;
+    grid-column-end:6;
+    grid-row-start: 2;
+    grid-row-end:3;
 }
 
 .content {  
@@ -132,7 +149,12 @@ h3 {
 
 
 /* ================Projects Section=============== */
-
+.projects {
+    grid-column-start:2;
+    grid-column-end:8;
+    grid-row-start: 3;
+    grid-row-end:6;
+}
 /* Main container */
 .overlay-image {
     position: relative;
@@ -224,6 +246,13 @@ h3 {
 
 /*==============Skills Section===============*/
 
+.skills {
+    grid-column-start:2;
+    grid-column-end:7;
+    grid-row-start: 6;
+    grid-row-end:7;
+}
+
 h3.section-title  {
 margin-top: 50px;
 }
@@ -265,12 +294,15 @@ margin-top: 50px;
 /*===================footer======================*/
 
 .footer-container {
-    left: 0;
-    bottom: 0;
-    width: 100%;
+    display: inline-grid; 
+    grid-template-columns: 25% 25% 25% 25%; 
     background-color: #00366c;
     color: white;
     text-align: left;
+    grid-column-start:1;
+    grid-column-end:8;
+    grid-row-start: 8;
+    grid-row-end:9;
 
 }
 
@@ -280,6 +312,8 @@ height: 200px;
 width: 600px;
 padding: 10px;
 margin: 10px;
+grid-column-start: 2;
+grid-column:3 ;
 }
 
 
@@ -291,6 +325,8 @@ widows: 600px;
 text-align: left;
 padding: 10px;
 margin-left: 30px;
+grid-column-start: 2;
+grid-column-end: 3;
 }
 
 
