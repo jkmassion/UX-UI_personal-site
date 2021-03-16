@@ -41,9 +41,6 @@ body {
     display: grid;
     grid-template-columns: 10% 12% 18% auto 12% 18% 10% ;
     grid-template-rows:5% 13% 13% 16% 16% 12% 18% 7%;
-    grid-template-areas:
-    "topnav topnav topnav topnav topnav topnav topnav" 
-    " . ";
 }
 /*====================navigation==========================*/
 
@@ -72,9 +69,10 @@ ul.nav{
 
 nav {
     padding: 1%;
-    display: flex;
     background-color: #f2f2f2;
     opacity: 90%;
+    box-shadow: 10px 1px 30px lightgrey;
+    z-index: 20;
 }
 
 .sticky {
@@ -147,6 +145,12 @@ h3 {
     padding: 60px 20px 30px 20px; 
 }
 
+.primary-button {
+    background-color: #C0D9F1;
+    border: none;
+    color: #4773e0;
+}
+
 
 /* ================Projects Section=============== */
 .projects {
@@ -182,7 +186,7 @@ h3 {
     width: 100%;
   }
 
-  .featured-project{
+.featured-project{
     position: relative;
     width:100%;
 }
@@ -229,9 +233,12 @@ h3 {
 }
 
 .project-card-container{
-   display: grid;
-   grid-template-columns: auto auto;
-   grid-template-rows: auto auto;
+   display: inline-grid;
+   grid-template-columns: 45% 10% 45%;
+   grid-template-rows: 45% 10% 45%;
+   grid-template-areas: 
+   "card1 . card2"
+   "card3 . card4";
    padding: 20px;
 }
 
