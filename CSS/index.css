@@ -4,12 +4,12 @@
     --color-primary:#4773e0;
   }
   
-  html[data-theme='dark'] {
+ body[data-theme='dark'] {
     --background-primary:#001830;
     --color-primary:#C0D9F1;
   }
   
-  html {
+body{
     transition: color 300ms, background-color 300ms;
     background: var(--background-primary);
     color: var(--color-primary);
