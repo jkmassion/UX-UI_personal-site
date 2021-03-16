@@ -1,5 +1,29 @@
+/*====================!!TRIAL*/
+:root {
+    --background-primary:#fff;
+    --color-primary:#4773e0;
+  }
+  
+  html[data-theme='dark'] {
+    --background-primary:#001830;
+    --color-primary:#C0D9F1;
+  }
+  
+  html {
+    transition: color 300ms, background-color 300ms;
+    background: var(--background-primary);
+    color: var(--color-primary);
+  }
+  
+  h1, h2, p {
+    color: var(--color-primary);
+  }
+
+/*====================TRIAL END!!==========================*/
+
 *{
     font-family: Poppins;
+    scroll-behavior: smooth;
 }
 
 .inner {
@@ -8,45 +32,66 @@
     max-width:1000px; 
 }
 
-.headerContent {
-    padding-top: 0px;
-    padding-right: 50px;
-    padding-bottom: 0px;
-    padding-left: 50px;
-}
-
 a {
     text-decoration-line: none;
 }
 
 /*====================navigation==========================*/
 
-.topnav {
-    background-color: #f2f2f2;
-    z-index: 10;
-
+#topnav {
+    color: #f2f2f2;
+    position: absolute;
 }
-ul {
+
+ul.nav{
     list-style-type: none;
-    margin-left: auto;
     width: 50%;
+    justify-content: right;
+    padding: 0.5em;
   } 
 
-.logo {
+.nav-logo {
     width: 23%;
-    padding: 20%;
-    text-align: center;
+    padding: 0.3em;
+    float: left;
+    
 }
 
 nav {
     padding: 1%;
     display: flex;
+    background-color: #f2f2f2;
+    opacity: 90%;
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/*==============light mode/dark mode============*/
+
+button {
+    display: inline-block;
+    border-radius: 3px;
+}
+
+.light {
+    background-color: #C0D9F1;
+    border: none;
+    color: #4773e0;
+}
+
+.dark {
+    background-color: #00366c;
+    color: #C0D9F1;
+    border: none;
+}
 
 /*==============hero============*/
 .hero {
-    display: flex;
+    display: grid;
     align-items: center;
     justify-content: center;
 }
@@ -54,9 +99,7 @@ nav {
 .content {  
     color:#4773e0;
     text-align: left;
-    width:fit-content;
     padding: 100px;
-    
 }
 
 h1 {
@@ -156,22 +199,21 @@ h3 {
     color: white; 
 }
 
-.project-card{
+.project-card {
     margin: 10px 20px 10px 20px;
     border: 1px solid #00366c;
     padding: 50px;
+
 }
 
 .project-card-container{
-    display: grid;
-    grid-template-areas: 
-   "card1 card2"
-   "card3 card4";
-    grid-template-columns: 'max-content max-content';
-    padding: 20px;
+   display: grid;
+   grid-template-columns: auto auto;
+   grid-template-rows: auto auto;
+   padding: 20px;
 }
 
-.project1{ grid-area: card1;}
+.project1{grid-area: card1;}
 
 .project2{grid-area: card2;}
 
@@ -186,27 +228,24 @@ h3.section-title  {
 margin-top: 50px;
 }
 .skills-card-container {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    overflow: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
 
 }
 
 
 .skillsCard {
-    width: 25%;
-    margin: 30px;
-    display: flex;
+    margin: 30px 30px 30px 60px;
+    padding: 100px;
+    
 
 }
 
 
 
 @media only screen and (max-width:600){
-    .skills-card-container{
+    .-card-container{
         flex-direction:column;
     }
 
@@ -217,10 +256,8 @@ margin-top: 50px;
     
     .project-card-container{
         grid-template-areas: 
-        "card1"
-        "card2"
-        "card3"
-        "card4";
+        "card1 card2"
+        "card3 card4";
     }
 
 }
@@ -265,7 +302,6 @@ margin-left: 30px;
   color: #fff;
   padding: 0;
   text-align: center;
-  margin: 0;
   padding-right: 40px;
   transition: 1s;
   float: right;
